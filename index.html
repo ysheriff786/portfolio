@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Yusuf Sheriff — Full Stack Developer portfolio. Specializing in React, Node.js, and MongoDB." />
+  <meta name="keywords" content="Yusuf Sheriff, full stack developer, web developer, portfolio, React, Node.js, MongoDB" />
+  <meta name="author" content="Yusuf Sheriff" />
+
+  <meta property="og:title" content="Yusuf Sheriff — Full Stack Developer" />
+  <meta property="og:description" content="Building modern web applications with React, Node.js & MongoDB." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ysheriff786.github.io/portfolio-main-model-1" />
+
+<link rel="icon" type="image/png" href="images/favicon.png" />
+
+  <title>  _Portfolio Sheriff's</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="nav-logo">YS</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="resume.pdf" target="_blank" class="nav-btn nav-link">Resume</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="container hero-grid-container">
+      <div class="hero-text-col">
+        <p class="hero-greeting reveal">Hi, I'm</p>
+        <h1 class="hero-name reveal">Yusuf Sheriff</h1>
+        <div class="hero-typing reveal">
+          <span id="typed-output"></span>
+        </div>
+        <p class="hero-tagline reveal">
+          I build modern, scalable web applications with clean code and great user experiences.
+        </p>
+        <div class="hero-socials reveal">
+          <a href="https://github.com/ysheriff786" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+          <a href="https://www.linkedin.com/in/sheriff786" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="mailto:ysheriff369@gmail.com" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+        </div>
+        <div class="hero-actions reveal">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="resume.pdf" target="_blank" download class="btn btn-outline">Download CV</a>
+        </div>
+      </div>
+      <div class="hero-img-col reveal">
+        <div class="hero-tech-visual">
+          <!-- Central code block -->
+          <div class="tech-central-card">
+            <div class="tech-code-lines">
+              <span class="code-line"><span class="c-keyword">def</span> <span class="c-fn">build_future</span><span class="c-paren">(</span><span class="c-param">skills</span><span class="c-paren">)</span><span class="c-punc">:</span></span>
+              <span class="code-line indent"><span class="c-keyword">for</span> tech <span class="c-keyword">in</span> skills<span class="c-punc">:</span></span>
+              <span class="code-line indent2"><span class="c-fn">deploy</span><span class="c-paren">(</span>tech<span class="c-paren">)</span></span>
+              <span class="code-line indent"><span class="c-keyword">return</span> <span class="c-string">"innovation"</span></span>
+              <span class="code-cursor">|</span>
+            </div>
+          </div>
+          <!-- Orbiting tech icons -->
+          <div class="tech-orbit">
+            <div class="tech-icon-badge orbit-1" title="Python">
+              <svg viewBox="0 0 48 48" width="32" height="32"><defs><linearGradient id="pyG1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#3776AB"/><stop offset="100%" stop-color="#FFD43B"/></linearGradient></defs><path d="M24.1 4C13.6 4 14.3 8.7 14.3 8.7l0 4.6h10v1.4H10.2S4 13.9 4 24.5s5.4 10.1 5.4 10.1h3.2v-4.9s-.2-5.4 5.3-5.4h9.1s5.1.1 5.1-4.9V9C32.1 4.1 24.1 4 24.1 4zm-5 2.9c.9 0 1.7.8 1.7 1.7s-.8 1.7-1.7 1.7-1.7-.8-1.7-1.7.8-1.7 1.7-1.7z" fill="#3776AB"/><path d="M24.1 44.1c10.5 0 9.8-4.7 9.8-4.7l0-4.6h-10v-1.4h14.1S44 34.2 44 23.6s-5.4-10.1-5.4-10.1h-3.2v4.9s.2 5.4-5.3 5.4h-9.1s-5.1-.1-5.1 4.9v8.3c0 4.9 8 4.9 8 4.9l-.8.2zm5-2.9c-.9 0-1.7-.8-1.7-1.7s.8-1.7 1.7-1.7 1.7.8 1.7 1.7-.8 1.7-1.7 1.7z" fill="#FFD43B"/></svg>
+              <span>HTML</span>
+            </div>
+            <div class="tech-icon-badge orbit-2" title="Java">
+              <svg viewBox="0 0 48 48" width="32" height="32"><path d="M20.2 33.3s-1.5.9.9 1.2c2.9.4 4.4.3 7.6-.3 0 0 .8.5 2 .9-7.2 3.1-16.3-.2-10.5-1.8z" fill="#e76f00"/><path d="M19.3 29.5s-1.7 1.3 1 1.5c3.4.2 6.1.3 10.8-.4 0 0 .6.6 1.5.9-9.5 2.8-20.1.2-13.3-2z" fill="#e76f00"/><path d="M26.5 22c1.9 2.2-.5 4.2-.5 4.2s4.9-2.5 2.6-5.7c-2.1-3-3.7-4.5 5-9.7 0 0-13.6 3.4-7.1 11.2z" fill="#e76f00"/><path d="M34.7 36.6s1.1.9-1.2 1.7c-4.4 1.3-18.3 1.7-22.2 0-1.4-.6 1.2-1.5 2-1.7.8-.2 1.3-.1 1.3-.1-1.5-1-9.8 2.1-4.2 3 15.2 2.4 27.7-1.1 24.3-2.9z" fill="#e76f00"/><path d="M20.9 25.4s-6.9 1.7-2.5 2.3c2 .3 5.9.2 9.6-.1 3-.3 6-.9 6-.9s-1 .4-1.7.9c-7 1.8-20.5.9-16.6-.9 3.3-1.5 5.2-1.3 5.2-1.3z" fill="#e76f00"/><path d="M31.7 31.4c7.1-3.7 3.8-7.2 1.5-6.7-.6.1-.8.2-.8.2s.2-.3.6-.5c4.5-1.6 8 4.7-1.4 7.1 0 0 .1-.1.1-.1z" fill="#e76f00"/><path d="M28.1 4s3.9 3.9-3.7 9.9c-6.1 4.8-1.4 7.6 0 10.7-3.5-3.2-6.1-6-4.4-8.6 2.6-3.8 9.7-5.7 8.1-12z" fill="#e76f00"/></svg>
+              <span>Java</span>
+            </div>
+            <div class="tech-icon-badge orbit-3" title="React">
+              <svg viewBox="0 0 48 48" width="32" height="32"><circle cx="24" cy="24" r="3.5" fill="#61DAFB"/><ellipse cx="24" cy="24" rx="20" ry="7.5" fill="none" stroke="#61DAFB" stroke-width="2"/><ellipse cx="24" cy="24" rx="20" ry="7.5" fill="none" stroke="#61DAFB" stroke-width="2" transform="rotate(60 24 24)"/><ellipse cx="24" cy="24" rx="20" ry="7.5" fill="none" stroke="#61DAFB" stroke-width="2" transform="rotate(120 24 24)"/></svg>
+              <span>React</span>
+            </div>
+            <div class="tech-icon-badge orbit-4" title="Node.js">
+              <svg viewBox="0 0 48 48" width="32" height="32"><path d="M24 4L6 14v20l18 10 18-10V14L24 4z" fill="#3C873A"/><path d="M24 8.5L10 17v14l14 7.5L38 31V17L24 8.5z" fill="#3C873A" opacity="0.7"/><text x="24" y="27" font-size="11" font-weight="bold" fill="white" text-anchor="middle" font-family="sans-serif">JS</text></svg>
+              <span>CSS</span>
+            </div>
+            <div class="tech-icon-badge orbit-5" title="MongoDB">
+              <svg viewBox="0 0 48 48" width="32" height="32"><path d="M24 4c0 0-10 12-10 22 0 5.5 4.5 10 10 10s10-4.5 10-10C34 16 24 4 24 4z" fill="#4DB33D"/><path d="M24 6c0 0-8 10-8 20 0 4.4 3.6 8 8 8s8-3.6 8-8C32 16 24 6 24 6z" fill="#3FA037" opacity="0.7"/><line x1="24" y1="30" x2="24" y2="44" stroke="#4DB33D" stroke-width="3" stroke-linecap="round"/></svg>
+              <span>MongoDB</span>
+            </div>
+            <div class="tech-icon-badge orbit-6" title="Docker">
+              <svg viewBox="0 0 48 48" width="32" height="32"><rect x="6" y="18" width="8" height="6" rx="1" fill="#2496ED"/><rect x="15" y="18" width="8" height="6" rx="1" fill="#2496ED"/><rect x="24" y="18" width="8" height="6" rx="1" fill="#2496ED"/><rect x="15" y="11" width="8" height="6" rx="1" fill="#2496ED"/><rect x="24" y="11" width="8" height="6" rx="1" fill="#2496ED"/><path d="M6 26c0 0 2 8 18 8s18-8 18-8H6z" fill="#2496ED" opacity="0.6"/><circle cx="38" cy="22" r="3" fill="#2496ED" opacity="0.8"/></svg>
+              <span>SQL</span>
+            </div>
+            <div class="tech-icon-badge orbit-7" title="JavaScript">
+              <svg viewBox="0 0 48 48" width="32" height="32"><rect x="4" y="4" width="40" height="40" rx="4" fill="#F7DF1E"/><text x="24" y="32" font-size="18" font-weight="bold" fill="#323330" text-anchor="middle" font-family="sans-serif">JS</text></svg>
+              <span>JavaScript</span>
+            </div>
+            <div class="tech-icon-badge orbit-8" title="Git">
+              <svg viewBox="0 0 48 48" width="32" height="32"><path d="M44.7 22.3L25.7 3.3a2.5 2.5 0 0 0-3.5 0L18.5 7l4.4 4.4a3 3 0 0 1 3.8 3.8L31 19.5a3 3 0 1 1-1.8 1.8L25.5 17v10.7a3 3 0 1 1-2.5 0V16.7a3 3 0 0 1-1.6-3.9L17 8.4 3.3 22.1a2.5 2.5 0 0 0 0 3.5l19 19a2.5 2.5 0 0 0 3.5 0l18.9-18.9a2.5 2.5 0 0 0 0-3.4z" fill="#F05032"/></svg>
+              <span>Git</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider" />
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">About Me</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid reveal">
+        <div class="about-text-col">
+          <p class="about-bio">
+            I'm a passionate Full Stack Developer with expertise in modern web technologies.
+            I create responsive, user-friendly applications and solve complex problems with
+            clean, efficient code. Committed to continuous learning and building innovative
+            solutions that make a real impact.
+          </p>
+
+          <div class="about-stats">
+            <div class="about-stat-card">
+              <span class="about-stat-num">2+</span>
+              <span class="about-stat-label">Projects Built</span>
+            </div>
+            <div class="about-stat-card">
+              <span class="about-stat-num">5+</span>
+              <span class="about-stat-label">Technologies</span>
+            </div>
+            <div class="about-stat-card">
+              <span class="about-stat-num">1+</span>
+              <span class="about-stat-label">Years Learning</span>
+            </div>
+          </div>
+
+          <div class="about-tags">
+            <span class="tag">Full Stack</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">JAVA</span>
+            <span class="tag">Web Design</span>
+          </div>
+        </div>
+        <div class="about-img-col">
+          <div class="floating-tech-visual">
+            <div class="tech-glow"></div>
+            
+            <div class="floating-ring ring-1"></div>
+            <div class="floating-ring ring-2"></div>
+
+            <div class="floating-panel panel-front">
+              <div class="panel-icon" style="color: #61DAFB"><i class="bi bi-window-sidebar"></i></div>
+              <div class="panel-info">
+                <span class="panel-title">Frontend</span>
+                <span class="panel-desc">React & UI/UX</span>
+              </div>
+            </div>
+
+            <div class="floating-panel panel-middle">
+              <div class="panel-icon" style="color: #3C873A"><i class="bi bi-hdd-network"></i></div>
+              <div class="panel-info">
+                <span class="panel-title">Backend</span>
+                <span class="panel-desc">Node.js API</span>
+              </div>
+            </div>
+
+            <div class="floating-panel panel-back">
+              <div class="panel-icon" style="color: #4DB33D"><i class="bi bi-database"></i></div>
+              <div class="panel-info">
+                <span class="panel-title">Database</span>
+                <span class="panel-desc">MongoDB Ops</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="edu-grid">
+        <div class="edu-card reveal">
+          <div class="edu-icon"><i class="bi bi-mortarboard-fill"></i></div>
+          <h3 class="edu-title">HSC</h3>
+          <p class="edu-school">Jay Matriculation School</p>
+          <span class="edu-score">Score: 91%</span>
+        </div>
+        <div class="edu-card reveal">
+          <div class="edu-icon"><i class="bi bi-book-fill"></i></div>
+          <h3 class="edu-title">Bachelor of Engineering</h3>
+          <p class="edu-school">Computer Science & Engineering</p>
+          <span class="edu-score">In Progress</span>
+        </div>
+        <div class="edu-card reveal">
+          <div class="edu-icon"><i class="bi bi-laptop-fill"></i></div>
+          <h3 class="edu-title">Self-Learning</h3>
+          <p class="edu-school">Full Stack Development</p>
+          <span class="edu-score">In Progress</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider" />
+
+  <!-- Projects -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Projects</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card reveal">
+          <div class="project-img">
+            <img src="images/project_one.png" alt="CareQueue — Healthcare Queue System" />
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">CareQueue Healthcare Platform</h3>
+            <p class="project-desc">A smart appointment and queue optimization system tailored for rural clinics, calculating estimated wait times dynamically.</p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">MongoDB</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-primary">Live Demo</a>
+              <a href="#" class="btn btn-sm btn-outline"><i class="bi bi-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-img">
+            <img src="images/project_two.png" alt="TechAlpha Clinic Dashboard" />
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">TechAlpha Patient Portal</h3>
+            <p class="project-desc">A custom portal featuring role-based dashboards, clinical records tracking, and responsive appointment manager.</p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Tailwind</span>
+              <span class="tag">Firebase</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-primary">Live Demo</a>
+              <a href="#" class="btn btn-sm btn-outline"><i class="bi bi-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-img">
+            <img src="images/project_three.png" alt="DataSync Engine API" />
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">DataSync Engine API</h3>
+            <p class="project-desc">High-throughput RESTful API backing server equipped with automated database seeding, tests, and Docker deployment containers.</p>
+            <div class="project-tags">
+              <span class="tag">Express</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Docker</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-primary">Live Demo</a>
+              <a href="#" class="btn btn-sm btn-outline"><i class="bi bi-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-img">
+            <img src="images/project_four.png" alt="TaskFlow Worker Dashboard" />
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">TaskFlow Background Worker</h3>
+            <p class="project-desc">Django and Python web application utilizing Redis queues for task scheduling, progress tracking, and batch processing.</p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Django</span>
+              <span class="tag">Redis</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-primary">Live Demo</a>
+              <a href="#" class="btn btn-sm btn-outline"><i class="bi bi-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider" />
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Skills</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-icon"><i class="bi bi-code-slash"></i></div>
+          <h3 class="skill-name">HTML &amp; CSS</h3>
+          <div class="skill-bar"><div class="skill-fill" style="width: 95%"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon"><i class="bi bi-filetype-js"></i></div>
+          <h3 class="skill-name">JavaScript</h3>
+          <div class="skill-bar"><div class="skill-fill" style="width: 70%"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon"><i class="bi bi-filetype-jsx"></i></div>
+          <h3 class="skill-name">React</h3>
+          <div class="skill-bar"><div class="skill-fill" style="width: 65%"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon"><i class="bi bi-filetype-json"></i></div>
+          <h3 class="skill-name">Node.js</h3>
+          <div class="skill-bar"><div class="skill-fill" style="width: 60%"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon"><i class="bi bi-database"></i></div>
+          <h3 class="skill-name">MongoDB</h3>
+          <div class="skill-bar"><div class="skill-fill" style="width: 55%"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon"><i class="bi bi-git"></i></div>
+          <h3 class="skill-name">Git &amp; GitHub</h3>
+          <div class="skill-bar"><div class="skill-fill" style="width: 65%"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon"><i class="bi bi-filetype-java"></i></div>
+          <h3 class="skill-name">Java</h3>
+          <div class="skill-bar"><div class="skill-fill" style="width: 80%"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon"><i class="bi bi-server"></i></div>
+          <h3 class="skill-name">Express.js</h3>
+          <div class="skill-bar"><div class="skill-fill" style="width: 45%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider" />
+
+  <!-- Contact -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h3 class="contact-heading">Let's work together</h3>
+          <p class="contact-desc">
+            I'm currently open to freelance opportunities and full-time positions.
+            Feel free to reach out if you'd like to collaborate or just say hello.
+          </p>
+
+          <div class="contact-items">
+            <div class="contact-item">
+              <i class="bi bi-envelope-fill"></i>
+              <div>
+                <span class="contact-label">Email</span>
+                <a href="mailto:ysheriff369@gmail.com">ysheriff369@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="bi bi-telephone-fill"></i>
+              <div>
+                <span class="contact-label">Phone</span>
+                <a href="tel:+918248594425">+91 8248594425</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="bi bi-github"></i>
+              <div>
+                <span class="contact-label">GitHub</span>
+                <a href="https://github.com/ysheriff786" target="_blank" rel="noopener">ysheriff786</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="bi bi-linkedin"></i>
+              <div>
+                <span class="contact-label">LinkedIn</span>
+                <a href="https://www.linkedin.com/in/sheriff786" target="_blank" rel="noopener">Yusuf Sheriff</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" action="https://formspree.io/f/your-id" method="POST">
+          <h3 class="contact-heading">Send a message</h3>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="_replyto" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+          <div id="formStatus" class="form-status"></div>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-socials">
+        <a href="https://github.com/ysheriff786" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/sheriff786" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="mailto:ysheriff369@gmail.com" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Yusuf Sheriff. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+
+      // ─── Typed.js ───
+      var typed = new Typed('#typed-output', {
+        strings: [
+          'Full Stack Developer',
+          'Creative Thinker',
+          'Problem Solver',
+          'Tech Innovator'
+        ],
+        typeSpeed: 60,
+        backSpeed: 35,
+        loop: true,
+        cursorChar: '|',
+        smartBackspace: true
+      });
+
+      // ─── Mobile Nav ───
+      var hamburger = document.getElementById('hamburger');
+      var navLinks = document.getElementById('navLinks');
+      hamburger.addEventListener('click', function () {
+        hamburger.classList.toggle('active');
+        navLinks.classList.toggle('open');
+      });
+
+      // Close nav on link click
+      navLinks.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', function () {
+          hamburger.classList.remove('active');
+          navLinks.classList.remove('open');
+        });
+      });
+
+      // ─── Navbar Scroll Effect ───
+      var navbar = document.getElementById('navbar');
+      window.addEventListener('scroll', function () {
+        if (window.scrollY > 50) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      });
+
+      // ─── Smooth Scroll ───
+      document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          var target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+
+      // ─── Active Nav Link on Scroll ───
+      var sections = document.querySelectorAll('section[id]');
+      var navLinkEls = document.querySelectorAll('.nav-link');
+
+      function updateActiveLink() {
+        var scrollPos = window.scrollY + 150;
+        var current = '';
+        sections.forEach(function (section) {
+          var top = section.offsetTop;
+          var bottom = top + section.offsetHeight;
+          if (scrollPos >= top && scrollPos < bottom) {
+            current = section.getAttribute('id');
+          }
+        });
+        navLinkEls.forEach(function (link) {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === '#' + current) {
+            link.classList.add('active');
+          }
+        });
+      }
+
+      window.addEventListener('scroll', updateActiveLink);
+      updateActiveLink();
+
+      // ─── Intersection Observer for Reveal Animations ───
+      var revealEls = document.querySelectorAll('.reveal');
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
+
+      revealEls.forEach(function (el) {
+        observer.observe(el);
+      });
+
+      // ─── Back to Top ───
+      var backToTop = document.getElementById('backToTop');
+      window.addEventListener('scroll', function () {
+        if (window.scrollY > 500) {
+          backToTop.classList.add('visible');
+        } else {
+          backToTop.classList.remove('visible');
+        }
+      });
+
+      backToTop.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      // ─── Contact Form Fallback & AJAX Handling ───
+      var contactForm = document.getElementById('contactForm');
+      var formStatus = document.getElementById('formStatus');
+      if (contactForm && formStatus) {
+        contactForm.addEventListener('submit', function (e) {
+          e.preventDefault();
+          var name = document.getElementById('name').value;
+          var email = document.getElementById('email').value;
+          var message = document.getElementById('message').value;
+          var actionUrl = contactForm.getAttribute('action');
+
+          if (actionUrl.includes('your-id')) {
+            // Mailto fallback
+            var mailtoUrl = 'mailto:ysheriff369@gmail.com' +
+              '?subject=' + encodeURIComponent('Portfolio Contact from ' + name) +
+              '&body=' + encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\nMessage:\n' + message);
+            window.location.href = mailtoUrl;
+
+            formStatus.className = 'form-status info';
+            formStatus.innerHTML = '<div style="margin-top: 1rem; padding: 1.2rem; background: var(--bg-elevated); border: 1px solid var(--border); border-radius: var(--radius); text-align: left; font-size: 0.95rem; color: var(--text);">' +
+              '<strong style="font-size: 1.05rem;">Email App Opening...</strong><br><br>' +
+              '<strong>Prefer to use Gmail or webmail? Follow these steps:</strong><br>' +
+              '<ol style="margin-top: 0.5rem; margin-left: 1.5rem; margin-bottom: 1rem;">' +
+              '<li>Copy my email: <strong style="color: var(--primary);">ysheriff369@gmail.com</strong></li>' +
+              '<li>Copy your message from the text box above.</li>' +
+              '<li>Send it from your Gmail or preferred provider.</li>' +
+              '</ol>' +
+              '<em style="color: var(--text-muted); font-size: 0.85rem;">Note: Your message is kept above so you can easily copy it.</em>' +
+              '</div>';
+          } else {
+            // AJAX Formspree submission
+            formStatus.className = 'form-status info';
+            formStatus.textContent = 'Sending message...';
+
+            var formData = new FormData(contactForm);
+            fetch(actionUrl, {
+              method: 'POST',
+              body: formData,
+              headers: {
+                'Accept': 'application/json'
+              }
+            })
+            .then(function (response) {
+              if (response.ok) {
+                formStatus.className = 'form-status success';
+                formStatus.textContent = 'Message sent! Please wait for a reply.';
+                contactForm.reset();
+              } else {
+                return response.json().then(function (data) {
+                  if (data && data.errors) {
+                    formStatus.className = 'form-status error';
+                    formStatus.textContent = data.errors.map(function (err) { return err.message; }).join(', ');
+                  } else {
+                    formStatus.className = 'form-status error';
+                    formStatus.textContent = 'Oops! There was a problem submitting your form.';
+                  }
+                });
+              }
+            })
+            .catch(function () {
+              formStatus.className = 'form-status error';
+              formStatus.textContent = 'Oops! There was a problem submitting your form.';
+            });
+          }
+        });
+      }
+
+    });
+  </script>
+</body>
+</html>
